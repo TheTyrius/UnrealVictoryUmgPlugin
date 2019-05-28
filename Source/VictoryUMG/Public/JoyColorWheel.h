@@ -28,7 +28,7 @@ protected:
 // BP Exposed Core
 //~~~~~~~~~~~~~~
 public:
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category="Joy Color Wheel")
+	UPROPERTY(BlueprintReadOnly, Meta = (DisplayName = "Initial Color", ExposeOnSpawn = true), Category="Joy Color Wheel")
 	FLinearColor JoyColor;
 
 	/** Should the color picker jump instantly to the chosen JoyColor when it is first created? */
